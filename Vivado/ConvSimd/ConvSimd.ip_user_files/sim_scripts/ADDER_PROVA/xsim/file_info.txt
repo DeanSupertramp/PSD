@@ -1,0 +1,1 @@
+ADDER_PROVA.vhd,vhdl,xil_defaultlib,../../../../ConvSimd.srcs/sources_1/ip/ADDER_PROVA/sim/ADDER_PROVA.vhd,
