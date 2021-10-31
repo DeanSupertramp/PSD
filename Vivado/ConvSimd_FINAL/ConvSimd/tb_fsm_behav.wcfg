@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_final_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_final" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="998233334fs"></ZoomStartTime>
+      <ZoomEndTime time="1038833335fs"></ZoomEndTime>
+      <Cursor1Time time="1005000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="186"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wvobject fp_name="/TB_final/START_TB" type="logic">
+      <obj_property name="ElementShortName">START_TB</obj_property>
+      <obj_property name="ObjectShortName">START_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/RST_TB" type="logic">
+      <obj_property name="ElementShortName">RST_TB</obj_property>
+      <obj_property name="ObjectShortName">RST_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/CLK_TB" type="logic">
+      <obj_property name="ElementShortName">CLK_TB</obj_property>
+      <obj_property name="ObjectShortName">CLK_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/SIMD" type="logic">
+      <obj_property name="ElementShortName">SIMD</obj_property>
+      <obj_property name="ObjectShortName">SIMD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/ADDR_IN" type="array">
+      <obj_property name="ElementShortName">ADDR_IN[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_IN[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/ADDR_OUT" type="array">
+      <obj_property name="ElementShortName">ADDR_OUT[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_OUT[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/MEM_IN/U0/douta" type="array">
+      <obj_property name="ElementShortName">douta[15:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/pixel_in" type="array">
+      <obj_property name="ElementShortName">pixel_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONTROL_UNIT/colonna" type="array">
+      <obj_property name="ElementShortName">colonna[5:0]</obj_property>
+      <obj_property name="ObjectShortName">colonna[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONTROL_UNIT/riga" type="array">
+      <obj_property name="ElementShortName">riga[5:0]</obj_property>
+      <obj_property name="ObjectShortName">riga[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONTROL_UNIT/EN_MEM_OUT" type="logic">
+      <obj_property name="ElementShortName">EN_MEM_OUT</obj_property>
+      <obj_property name="ObjectShortName">EN_MEM_OUT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONTROL_UNIT/WEA_MEM_OUT" type="array">
+      <obj_property name="ElementShortName">WEA_MEM_OUT[0:0]</obj_property>
+      <obj_property name="ObjectShortName">WEA_MEM_OUT[0:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider553">
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONTROL_UNIT/VALID" type="logic">
+      <obj_property name="ElementShortName">VALID</obj_property>
+      <obj_property name="ObjectShortName">VALID</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider554">
+   </wvobject>
+   <wvobject fp_name="/TB_final/valid_1" type="logic">
+      <obj_property name="ElementShortName">valid_1</obj_property>
+      <obj_property name="ObjectShortName">valid_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONTROL_UNIT/current_state" type="other">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/MEMORY_OUT/dina" type="array">
+      <obj_property name="ElementShortName">dina[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/PIX_OUT_TB" type="array">
+      <obj_property name="ElementShortName">PIX_OUT_TB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PIX_OUT_TB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/DataM" type="array">
+      <obj_property name="ElementShortName">DataM[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataM[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/DataL" type="array">
+      <obj_property name="ElementShortName">DataL[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataL[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONTROL_UNIT/RST_OUT" type="logic">
+      <obj_property name="ElementShortName">RST_OUT</obj_property>
+      <obj_property name="ObjectShortName">RST_OUT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONTROL_UNIT/delay" type="other">
+      <obj_property name="ElementShortName">delay</obj_property>
+      <obj_property name="ObjectShortName">delay</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONTROL_UNIT/PADDING" type="array">
+      <obj_property name="ElementShortName">PADDING[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PADDING[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/valid_1" type="logic">
+      <obj_property name="ElementShortName">valid_1</obj_property>
+      <obj_property name="ObjectShortName">valid_1</obj_property>
+   </wvobject>
+</wave_config>

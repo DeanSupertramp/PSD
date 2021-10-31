@@ -1,0 +1,31 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ConvSimd.srcs/sources_1/ip/Mem_out/Mem_out_sim_netlist.vhdl" \
+"../../../../ConvSimd.srcs/sources_1/ip/Memory_in/Memory_in_sim_netlist.vhdl" \
+"../../../../ConvSimd.srcs/sources_1/new/CONV_SIMD_3X3.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/FA.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/FIFO.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/FSM.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/MULT_SIMD3X3.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/MUX13.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/MUX9.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/Mux12.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/MuxExt.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/Mux_8.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/RCA_24.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/W2F.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/adder_level_1.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/adder_level_2.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/adder_level_4.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/adder_lever_3.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/mux1.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/mux11.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/mux14.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/mux20.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/mux32.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/pixel_final_sum.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/reg_file.vhd" \
+"../../../../ConvSimd.srcs/sim_1/new/TB_final.vhd" \
+
+# Do not sort compile order
+nosort

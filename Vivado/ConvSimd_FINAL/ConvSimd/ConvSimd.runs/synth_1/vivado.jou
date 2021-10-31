@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 31 10:57:54 2021
+# Process ID: 8956
+# Current directory: C:/Users/andry/Desktop/Digitale/Vivado/ConvSimd_FINAL/ConvSimd/ConvSimd.runs/synth_1
+# Command line: vivado.exe -log CONV_SIMD_3X3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CONV_SIMD_3X3.tcl
+# Log file: C:/Users/andry/Desktop/Digitale/Vivado/ConvSimd_FINAL/ConvSimd/ConvSimd.runs/synth_1/CONV_SIMD_3X3.vds
+# Journal file: C:/Users/andry/Desktop/Digitale/Vivado/ConvSimd_FINAL/ConvSimd/ConvSimd.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source CONV_SIMD_3X3.tcl -notrace

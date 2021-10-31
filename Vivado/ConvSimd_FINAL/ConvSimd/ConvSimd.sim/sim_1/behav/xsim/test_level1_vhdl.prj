@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ConvSimd.srcs/sources_1/new/FA.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/adder_level_2.vhd" \
+"../../../../ConvSimd.srcs/sim_1/new/test_level1.vhd" \
+
+# Do not sort compile order
+nosort

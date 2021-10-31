@@ -1,0 +1,1514 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sun Oct 31 11:00:18 2021
+| Host         : Andrea-Desktop running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file CONV_SIMD_3X3_timing_summary_routed.rpt -rpx CONV_SIMD_3X3_timing_summary_routed.rpx -warn_on_violation
+| Design       : CONV_SIMD_3X3
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.20 2017-11-01
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 39 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 33 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      1.193        0.000                      0                 7848        0.028        0.000                      0                 7848        6.020        0.000                       0                  2668  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
+-----  ------------       ----------      --------------
+clk    {0.000 7.000}      14.000          71.429          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk                 1.193        0.000                      0                 7848        0.028        0.000                      0                 7848        6.020        0.000                       0                  2668  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        1.193ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.028ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        6.020ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.193ns  (required time - arrival time)
+  Source:                 CONVOLUTORE/SOMMA_FINALE/PLL_0_REG_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            14.000ns  (clk rise@14.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.816ns  (logic 4.391ns (34.262%)  route 8.425ns (65.738%))
+  Logic Levels:           13  (LUT3=1 LUT5=10 LUT6=2)
+  Clock Path Skew:        -0.037ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.339ns = ( 18.339 - 14.000 ) 
+    Source Clock Delay      (SCD):    4.699ns
+    Clock Pessimism Removal (CPR):    0.323ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.948     0.948 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.016     2.963    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.059 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.639     4.699    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X30Y93         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PLL_0_REG_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y93         FDRE (Prop_fdre_C_Q)         0.478     5.177 r  CONVOLUTORE/SOMMA_FINALE/PLL_0_REG_reg[1]/Q
+                         net (fo=3, routed)           1.070     6.247    CONVOLUTORE/SOMMA_FINALE/PLL_0_REG[1]
+    SLICE_X15Y92         LUT6 (Prop_lut6_I2_O)        0.301     6.548 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[4]_i_2/O
+                         net (fo=3, routed)           1.296     7.844    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_2
+    SLICE_X13Y89         LUT5 (Prop_lut5_I0_O)        0.152     7.996 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[6]_i_2/O
+                         net (fo=3, routed)           0.562     8.558    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_4
+    SLICE_X13Y90         LUT5 (Prop_lut5_I0_O)        0.319     8.877 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[8]_i_2/O
+                         net (fo=3, routed)           0.490     9.367    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_6
+    SLICE_X12Y90         LUT5 (Prop_lut5_I0_O)        0.325     9.692 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[10]_i_2/O
+                         net (fo=3, routed)           0.606    10.298    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_8
+    SLICE_X12Y91         LUT5 (Prop_lut5_I0_O)        0.374    10.672 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[11]_i_2/O
+                         net (fo=2, routed)           0.440    11.112    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_10
+    SLICE_X12Y91         LUT3 (Prop_lut3_I0_O)        0.321    11.433 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[1]_i_2/O
+                         net (fo=6, routed)           0.467    11.900    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_11
+    SLICE_X14Y90         LUT6 (Prop_lut6_I0_O)        0.348    12.248 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[3]_i_2/O
+                         net (fo=3, routed)           0.607    12.855    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_1
+    SLICE_X15Y89         LUT5 (Prop_lut5_I0_O)        0.119    12.974 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[5]_i_2/O
+                         net (fo=3, routed)           0.561    13.535    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_3
+    SLICE_X15Y88         LUT5 (Prop_lut5_I0_O)        0.327    13.862 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[7]_i_2/O
+                         net (fo=3, routed)           0.561    14.423    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_5
+    SLICE_X15Y87         LUT5 (Prop_lut5_I0_O)        0.327    14.750 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[9]_i_2/O
+                         net (fo=3, routed)           0.561    15.310    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_7
+    SLICE_X13Y87         LUT5 (Prop_lut5_I0_O)        0.327    15.637 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[11]_i_2/O
+                         net (fo=3, routed)           0.589    16.226    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_9
+    SLICE_X12Y89         LUT5 (Prop_lut5_I0_O)        0.325    16.551 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[14]_i_2/O
+                         net (fo=3, routed)           0.615    17.166    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_11
+    SLICE_X10Y89         LUT5 (Prop_lut5_I4_O)        0.348    17.514 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[13]_i_1/O
+                         net (fo=1, routed)           0.000    17.514    CONVOLUTORE/SOMMA_FINALE/MSB_LVL3[13]
+    SLICE_X10Y89         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       14.000    14.000 r  
+    N15                                               0.000    14.000 r  CLK (IN)
+                         net (fo=0)                   0.000    14.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.814    14.814 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.911    16.725    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    16.816 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.522    18.339    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X10Y89         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[13]/C
+                         clock pessimism              0.323    18.662    
+                         clock uncertainty           -0.035    18.626    
+    SLICE_X10Y89         FDRE (Setup_fdre_C_D)        0.081    18.707    CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[13]
+  -------------------------------------------------------------------
+                         required time                         18.707    
+                         arrival time                         -17.514    
+  -------------------------------------------------------------------
+                         slack                                  1.193    
+
+Slack (MET) :             1.237ns  (required time - arrival time)
+  Source:                 CONVOLUTORE/SOMMA_FINALE/PLL_0_REG_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            14.000ns  (clk rise@14.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.809ns  (logic 4.384ns (34.226%)  route 8.425ns (65.774%))
+  Logic Levels:           13  (LUT3=1 LUT5=10 LUT6=2)
+  Clock Path Skew:        -0.037ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.339ns = ( 18.339 - 14.000 ) 
+    Source Clock Delay      (SCD):    4.699ns
+    Clock Pessimism Removal (CPR):    0.323ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.948     0.948 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.016     2.963    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.059 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.639     4.699    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X30Y93         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PLL_0_REG_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y93         FDRE (Prop_fdre_C_Q)         0.478     5.177 f  CONVOLUTORE/SOMMA_FINALE/PLL_0_REG_reg[1]/Q
+                         net (fo=3, routed)           1.070     6.247    CONVOLUTORE/SOMMA_FINALE/PLL_0_REG[1]
+    SLICE_X15Y92         LUT6 (Prop_lut6_I2_O)        0.301     6.548 f  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[4]_i_2/O
+                         net (fo=3, routed)           1.296     7.844    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_2
+    SLICE_X13Y89         LUT5 (Prop_lut5_I0_O)        0.152     7.996 f  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[6]_i_2/O
+                         net (fo=3, routed)           0.562     8.558    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_4
+    SLICE_X13Y90         LUT5 (Prop_lut5_I0_O)        0.319     8.877 f  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[8]_i_2/O
+                         net (fo=3, routed)           0.490     9.367    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_6
+    SLICE_X12Y90         LUT5 (Prop_lut5_I0_O)        0.325     9.692 f  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[10]_i_2/O
+                         net (fo=3, routed)           0.606    10.298    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_8
+    SLICE_X12Y91         LUT5 (Prop_lut5_I0_O)        0.374    10.672 f  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[11]_i_2/O
+                         net (fo=2, routed)           0.440    11.112    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_10
+    SLICE_X12Y91         LUT3 (Prop_lut3_I0_O)        0.321    11.433 f  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[1]_i_2/O
+                         net (fo=6, routed)           0.467    11.900    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_11
+    SLICE_X14Y90         LUT6 (Prop_lut6_I0_O)        0.348    12.248 f  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[3]_i_2/O
+                         net (fo=3, routed)           0.607    12.855    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_1
+    SLICE_X15Y89         LUT5 (Prop_lut5_I0_O)        0.119    12.974 f  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[5]_i_2/O
+                         net (fo=3, routed)           0.561    13.535    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_3
+    SLICE_X15Y88         LUT5 (Prop_lut5_I0_O)        0.327    13.862 f  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[7]_i_2/O
+                         net (fo=3, routed)           0.561    14.423    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_5
+    SLICE_X15Y87         LUT5 (Prop_lut5_I0_O)        0.327    14.750 f  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[9]_i_2/O
+                         net (fo=3, routed)           0.561    15.310    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_7
+    SLICE_X13Y87         LUT5 (Prop_lut5_I0_O)        0.327    15.637 f  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[11]_i_2/O
+                         net (fo=3, routed)           0.589    16.226    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_9
+    SLICE_X12Y89         LUT5 (Prop_lut5_I0_O)        0.325    16.551 f  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[14]_i_2/O
+                         net (fo=3, routed)           0.615    17.166    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_11
+    SLICE_X10Y89         LUT5 (Prop_lut5_I4_O)        0.341    17.507 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[14]_i_1/O
+                         net (fo=1, routed)           0.000    17.507    CONVOLUTORE/SOMMA_FINALE/MSB_LVL3[14]
+    SLICE_X10Y89         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       14.000    14.000 r  
+    N15                                               0.000    14.000 r  CLK (IN)
+                         net (fo=0)                   0.000    14.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.814    14.814 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.911    16.725    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    16.816 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.522    18.339    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X10Y89         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[14]/C
+                         clock pessimism              0.323    18.662    
+                         clock uncertainty           -0.035    18.626    
+    SLICE_X10Y89         FDRE (Setup_fdre_C_D)        0.118    18.744    CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[14]
+  -------------------------------------------------------------------
+                         required time                         18.744    
+                         arrival time                         -17.507    
+  -------------------------------------------------------------------
+                         slack                                  1.237    
+
+Slack (MET) :             1.327ns  (required time - arrival time)
+  Source:                 CONVOLUTORE/SOMMA_FINALE/PLL_0_REG_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            14.000ns  (clk rise@14.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.678ns  (logic 4.391ns (34.636%)  route 8.287ns (65.364%))
+  Logic Levels:           13  (LUT3=2 LUT5=9 LUT6=2)
+  Clock Path Skew:        -0.037ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.339ns = ( 18.339 - 14.000 ) 
+    Source Clock Delay      (SCD):    4.699ns
+    Clock Pessimism Removal (CPR):    0.323ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.948     0.948 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.016     2.963    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.059 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.639     4.699    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X30Y93         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PLL_0_REG_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y93         FDRE (Prop_fdre_C_Q)         0.478     5.177 r  CONVOLUTORE/SOMMA_FINALE/PLL_0_REG_reg[1]/Q
+                         net (fo=3, routed)           1.070     6.247    CONVOLUTORE/SOMMA_FINALE/PLL_0_REG[1]
+    SLICE_X15Y92         LUT6 (Prop_lut6_I2_O)        0.301     6.548 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[4]_i_2/O
+                         net (fo=3, routed)           1.296     7.844    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_2
+    SLICE_X13Y89         LUT5 (Prop_lut5_I0_O)        0.152     7.996 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[6]_i_2/O
+                         net (fo=3, routed)           0.562     8.558    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_4
+    SLICE_X13Y90         LUT5 (Prop_lut5_I0_O)        0.319     8.877 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[8]_i_2/O
+                         net (fo=3, routed)           0.490     9.367    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_6
+    SLICE_X12Y90         LUT5 (Prop_lut5_I0_O)        0.325     9.692 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[10]_i_2/O
+                         net (fo=3, routed)           0.606    10.298    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_8
+    SLICE_X12Y91         LUT5 (Prop_lut5_I0_O)        0.374    10.672 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[11]_i_2/O
+                         net (fo=2, routed)           0.440    11.112    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_10
+    SLICE_X12Y91         LUT3 (Prop_lut3_I0_O)        0.321    11.433 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[1]_i_2/O
+                         net (fo=6, routed)           0.467    11.900    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_11
+    SLICE_X14Y90         LUT6 (Prop_lut6_I0_O)        0.348    12.248 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[3]_i_2/O
+                         net (fo=3, routed)           0.607    12.855    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_1
+    SLICE_X15Y89         LUT5 (Prop_lut5_I0_O)        0.119    12.974 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[5]_i_2/O
+                         net (fo=3, routed)           0.561    13.535    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_3
+    SLICE_X15Y88         LUT5 (Prop_lut5_I0_O)        0.327    13.862 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[7]_i_2/O
+                         net (fo=3, routed)           0.561    14.423    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_5
+    SLICE_X15Y87         LUT5 (Prop_lut5_I0_O)        0.327    14.750 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[9]_i_2/O
+                         net (fo=3, routed)           0.561    15.310    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_7
+    SLICE_X13Y87         LUT5 (Prop_lut5_I0_O)        0.327    15.637 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[11]_i_2/O
+                         net (fo=3, routed)           0.589    16.226    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_9
+    SLICE_X12Y89         LUT5 (Prop_lut5_I0_O)        0.325    16.551 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[14]_i_2/O
+                         net (fo=3, routed)           0.477    17.028    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_11
+    SLICE_X10Y89         LUT3 (Prop_lut3_I2_O)        0.348    17.376 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[12]_i_1/O
+                         net (fo=1, routed)           0.000    17.376    CONVOLUTORE/SOMMA_FINALE/MSB_LVL3[12]
+    SLICE_X10Y89         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       14.000    14.000 r  
+    N15                                               0.000    14.000 r  CLK (IN)
+                         net (fo=0)                   0.000    14.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.814    14.814 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.911    16.725    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    16.816 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.522    18.339    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X10Y89         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[12]/C
+                         clock pessimism              0.323    18.662    
+                         clock uncertainty           -0.035    18.626    
+    SLICE_X10Y89         FDRE (Setup_fdre_C_D)        0.077    18.703    CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[12]
+  -------------------------------------------------------------------
+                         required time                         18.703    
+                         arrival time                         -17.376    
+  -------------------------------------------------------------------
+                         slack                                  1.327    
+
+Slack (MET) :             1.533ns  (required time - arrival time)
+  Source:                 CONVOLUTORE/SOMMA_FINALE/PLL_0_REG_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            14.000ns  (clk rise@14.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.360ns  (logic 4.050ns (32.766%)  route 8.310ns (67.234%))
+  Logic Levels:           12  (LUT3=1 LUT5=9 LUT6=2)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.336ns = ( 18.336 - 14.000 ) 
+    Source Clock Delay      (SCD):    4.699ns
+    Clock Pessimism Removal (CPR):    0.323ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.948     0.948 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.016     2.963    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.059 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.639     4.699    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X30Y93         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PLL_0_REG_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y93         FDRE (Prop_fdre_C_Q)         0.478     5.177 r  CONVOLUTORE/SOMMA_FINALE/PLL_0_REG_reg[1]/Q
+                         net (fo=3, routed)           1.070     6.247    CONVOLUTORE/SOMMA_FINALE/PLL_0_REG[1]
+    SLICE_X15Y92         LUT6 (Prop_lut6_I2_O)        0.301     6.548 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[4]_i_2/O
+                         net (fo=3, routed)           1.296     7.844    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_2
+    SLICE_X13Y89         LUT5 (Prop_lut5_I0_O)        0.152     7.996 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[6]_i_2/O
+                         net (fo=3, routed)           0.562     8.558    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_4
+    SLICE_X13Y90         LUT5 (Prop_lut5_I0_O)        0.319     8.877 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[8]_i_2/O
+                         net (fo=3, routed)           0.490     9.367    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_6
+    SLICE_X12Y90         LUT5 (Prop_lut5_I0_O)        0.325     9.692 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[10]_i_2/O
+                         net (fo=3, routed)           0.606    10.298    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_8
+    SLICE_X12Y91         LUT5 (Prop_lut5_I0_O)        0.374    10.672 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[11]_i_2/O
+                         net (fo=2, routed)           0.440    11.112    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_10
+    SLICE_X12Y91         LUT3 (Prop_lut3_I0_O)        0.321    11.433 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[1]_i_2/O
+                         net (fo=6, routed)           0.467    11.900    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cint_11
+    SLICE_X14Y90         LUT6 (Prop_lut6_I0_O)        0.348    12.248 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[3]_i_2/O
+                         net (fo=3, routed)           0.607    12.855    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_1
+    SLICE_X15Y89         LUT5 (Prop_lut5_I0_O)        0.119    12.974 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[5]_i_2/O
+                         net (fo=3, routed)           0.561    13.535    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_3
+    SLICE_X15Y88         LUT5 (Prop_lut5_I0_O)        0.327    13.862 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[7]_i_2/O
+                         net (fo=3, routed)           0.561    14.423    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_5
+    SLICE_X15Y87         LUT5 (Prop_lut5_I0_O)        0.327    14.750 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[9]_i_2/O
+                         net (fo=3, routed)           0.561    15.310    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_7
+    SLICE_X13Y87         LUT5 (Prop_lut5_I0_O)        0.327    15.637 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[11]_i_2/O
+                         net (fo=3, routed)           0.589    16.226    CONVOLUTORE/SOMMA_FINALE/SUM1_LVL3/cintM_9
+    SLICE_X12Y89         LUT5 (Prop_lut5_I4_O)        0.332    16.558 r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG[11]_i_1/O
+                         net (fo=1, routed)           0.501    17.059    CONVOLUTORE/SOMMA_FINALE/MSB_LVL3[11]
+    SLICE_X8Y89          FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       14.000    14.000 r  
+    N15                                               0.000    14.000 r  CLK (IN)
+                         net (fo=0)                   0.000    14.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.814    14.814 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.911    16.725    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    16.816 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.519    18.336    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X8Y89          FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[11]/C
+                         clock pessimism              0.323    18.659    
+                         clock uncertainty           -0.035    18.623    
+    SLICE_X8Y89          FDRE (Setup_fdre_C_D)       -0.031    18.592    CONVOLUTORE/SOMMA_FINALE/MSB_LVL3_REG_reg[11]
+  -------------------------------------------------------------------
+                         required time                         18.592    
+                         arrival time                         -17.059    
+  -------------------------------------------------------------------
+                         slack                                  1.533    
+
+Slack (MET) :             1.774ns  (required time - arrival time)
+  Source:                 CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            14.000ns  (clk rise@14.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.179ns  (logic 3.979ns (32.670%)  route 8.200ns (67.330%))
+  Logic Levels:           13  (LUT3=1 LUT5=9 LUT6=3)
+  Clock Path Skew:        -0.040ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.340ns = ( 18.340 - 14.000 ) 
+    Source Clock Delay      (SCD):    4.703ns
+    Clock Pessimism Removal (CPR):    0.323ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.948     0.948 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.016     2.963    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.059 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.643     4.703    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X15Y92         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y92         FDRE (Prop_fdre_C_Q)         0.456     5.159 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/Q
+                         net (fo=6, routed)           1.135     6.293    CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[0]
+    SLICE_X9Y92          LUT6 (Prop_lut6_I1_O)        0.124     6.417 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[19]_i_2/O
+                         net (fo=4, routed)           1.147     7.565    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_2
+    SLICE_X9Y88          LUT5 (Prop_lut5_I0_O)        0.152     7.717 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[21]_i_2/O
+                         net (fo=4, routed)           0.426     8.143    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_4
+    SLICE_X9Y89          LUT5 (Prop_lut5_I0_O)        0.328     8.471 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[23]_i_2/O
+                         net (fo=4, routed)           0.662     9.132    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_6
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.355     9.487 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[25]_i_2/O
+                         net (fo=4, routed)           0.297     9.785    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_8
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.328    10.113 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[27]_i_2/O
+                         net (fo=4, routed)           0.627    10.739    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_10
+    SLICE_X10Y90         LUT3 (Prop_lut3_I0_O)        0.353    11.092 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[29]_i_2/O
+                         net (fo=6, routed)           0.326    11.418    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_11
+    SLICE_X11Y90         LUT6 (Prop_lut6_I0_O)        0.348    11.766 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[14]_i_3/O
+                         net (fo=4, routed)           0.438    12.204    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_1
+    SLICE_X10Y90         LUT5 (Prop_lut5_I0_O)        0.116    12.320 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[16]_i_2/O
+                         net (fo=4, routed)           0.710    13.030    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_3
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.322    13.352 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[18]_i_3/O
+                         net (fo=4, routed)           0.572    13.924    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_5
+    SLICE_X9Y89          LUT5 (Prop_lut5_I0_O)        0.320    14.244 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[20]_i_3/O
+                         net (fo=4, routed)           0.662    14.906    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_7
+    SLICE_X7Y89          LUT5 (Prop_lut5_I0_O)        0.321    15.227 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[22]_i_3/O
+                         net (fo=5, routed)           0.504    15.731    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_9
+    SLICE_X6Y91          LUT6 (Prop_lut6_I5_O)        0.332    16.063 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[24]_i_3/O
+                         net (fo=2, routed)           0.695    16.758    CONVOLUTORE/SOMMA_FINALE/MSB_last[12]
+    SLICE_X11Y91         LUT5 (Prop_lut5_I0_O)        0.124    16.882 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[12]_i_1/O
+                         net (fo=1, routed)           0.000    16.882    CONVOLUTORE/SOMMA_FINALE/Z[12]
+    SLICE_X11Y91         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       14.000    14.000 r  
+    N15                                               0.000    14.000 r  CLK (IN)
+                         net (fo=0)                   0.000    14.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.814    14.814 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.911    16.725    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    16.816 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.523    18.340    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X11Y91         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[12]/C
+                         clock pessimism              0.323    18.663    
+                         clock uncertainty           -0.035    18.627    
+    SLICE_X11Y91         FDRE (Setup_fdre_C_D)        0.029    18.656    CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[12]
+  -------------------------------------------------------------------
+                         required time                         18.656    
+                         arrival time                         -16.882    
+  -------------------------------------------------------------------
+                         slack                                  1.774    
+
+Slack (MET) :             1.874ns  (required time - arrival time)
+  Source:                 CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            14.000ns  (clk rise@14.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.077ns  (logic 3.979ns (32.947%)  route 8.098ns (67.053%))
+  Logic Levels:           13  (LUT3=1 LUT5=10 LUT6=2)
+  Clock Path Skew:        -0.043ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.337ns = ( 18.337 - 14.000 ) 
+    Source Clock Delay      (SCD):    4.703ns
+    Clock Pessimism Removal (CPR):    0.323ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.948     0.948 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.016     2.963    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.059 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.643     4.703    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X15Y92         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y92         FDRE (Prop_fdre_C_Q)         0.456     5.159 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/Q
+                         net (fo=6, routed)           1.135     6.293    CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[0]
+    SLICE_X9Y92          LUT6 (Prop_lut6_I1_O)        0.124     6.417 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[19]_i_2/O
+                         net (fo=4, routed)           1.147     7.565    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_2
+    SLICE_X9Y88          LUT5 (Prop_lut5_I0_O)        0.152     7.717 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[21]_i_2/O
+                         net (fo=4, routed)           0.426     8.143    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_4
+    SLICE_X9Y89          LUT5 (Prop_lut5_I0_O)        0.328     8.471 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[23]_i_2/O
+                         net (fo=4, routed)           0.662     9.132    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_6
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.355     9.487 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[25]_i_2/O
+                         net (fo=4, routed)           0.297     9.785    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_8
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.328    10.113 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[27]_i_2/O
+                         net (fo=4, routed)           0.627    10.739    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_10
+    SLICE_X10Y90         LUT3 (Prop_lut3_I0_O)        0.353    11.092 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[29]_i_2/O
+                         net (fo=6, routed)           0.326    11.418    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_11
+    SLICE_X11Y90         LUT6 (Prop_lut6_I0_O)        0.348    11.766 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[14]_i_3/O
+                         net (fo=4, routed)           0.438    12.204    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_1
+    SLICE_X10Y90         LUT5 (Prop_lut5_I0_O)        0.116    12.320 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[16]_i_2/O
+                         net (fo=4, routed)           0.710    13.030    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_3
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.322    13.352 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[18]_i_3/O
+                         net (fo=4, routed)           0.572    13.924    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_5
+    SLICE_X9Y89          LUT5 (Prop_lut5_I0_O)        0.320    14.244 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[20]_i_3/O
+                         net (fo=4, routed)           0.662    14.906    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_7
+    SLICE_X7Y89          LUT5 (Prop_lut5_I0_O)        0.321    15.227 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[22]_i_3/O
+                         net (fo=5, routed)           0.514    15.741    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_9
+    SLICE_X6Y91          LUT5 (Prop_lut5_I4_O)        0.332    16.073 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[23]_i_3/O
+                         net (fo=2, routed)           0.583    16.655    CONVOLUTORE/SOMMA_FINALE/MSB_last[11]
+    SLICE_X9Y91          LUT5 (Prop_lut5_I0_O)        0.124    16.779 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[11]_i_1/O
+                         net (fo=1, routed)           0.000    16.779    CONVOLUTORE/SOMMA_FINALE/Z[11]
+    SLICE_X9Y91          FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       14.000    14.000 r  
+    N15                                               0.000    14.000 r  CLK (IN)
+                         net (fo=0)                   0.000    14.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.814    14.814 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.911    16.725    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    16.816 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.520    18.337    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X9Y91          FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[11]/C
+                         clock pessimism              0.323    18.660    
+                         clock uncertainty           -0.035    18.624    
+    SLICE_X9Y91          FDRE (Setup_fdre_C_D)        0.029    18.653    CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[11]
+  -------------------------------------------------------------------
+                         required time                         18.653    
+                         arrival time                         -16.779    
+  -------------------------------------------------------------------
+                         slack                                  1.874    
+
+Slack (MET) :             1.951ns  (required time - arrival time)
+  Source:                 CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[23]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            14.000ns  (clk rise@14.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.046ns  (logic 3.979ns (33.030%)  route 8.067ns (66.970%))
+  Logic Levels:           13  (LUT3=1 LUT5=10 LUT6=2)
+  Clock Path Skew:        -0.044ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.336ns = ( 18.336 - 14.000 ) 
+    Source Clock Delay      (SCD):    4.703ns
+    Clock Pessimism Removal (CPR):    0.323ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.948     0.948 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.016     2.963    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.059 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.643     4.703    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X15Y92         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y92         FDRE (Prop_fdre_C_Q)         0.456     5.159 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/Q
+                         net (fo=6, routed)           1.135     6.293    CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[0]
+    SLICE_X9Y92          LUT6 (Prop_lut6_I1_O)        0.124     6.417 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[19]_i_2/O
+                         net (fo=4, routed)           1.147     7.565    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_2
+    SLICE_X9Y88          LUT5 (Prop_lut5_I0_O)        0.152     7.717 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[21]_i_2/O
+                         net (fo=4, routed)           0.426     8.143    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_4
+    SLICE_X9Y89          LUT5 (Prop_lut5_I0_O)        0.328     8.471 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[23]_i_2/O
+                         net (fo=4, routed)           0.662     9.132    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_6
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.355     9.487 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[25]_i_2/O
+                         net (fo=4, routed)           0.297     9.785    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_8
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.328    10.113 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[27]_i_2/O
+                         net (fo=4, routed)           0.627    10.739    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_10
+    SLICE_X10Y90         LUT3 (Prop_lut3_I0_O)        0.353    11.092 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[29]_i_2/O
+                         net (fo=6, routed)           0.326    11.418    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_11
+    SLICE_X11Y90         LUT6 (Prop_lut6_I0_O)        0.348    11.766 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[14]_i_3/O
+                         net (fo=4, routed)           0.438    12.204    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_1
+    SLICE_X10Y90         LUT5 (Prop_lut5_I0_O)        0.116    12.320 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[16]_i_2/O
+                         net (fo=4, routed)           0.710    13.030    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_3
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.322    13.352 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[18]_i_3/O
+                         net (fo=4, routed)           0.572    13.924    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_5
+    SLICE_X9Y89          LUT5 (Prop_lut5_I0_O)        0.320    14.244 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[20]_i_3/O
+                         net (fo=4, routed)           0.662    14.906    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_7
+    SLICE_X7Y89          LUT5 (Prop_lut5_I0_O)        0.321    15.227 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[22]_i_3/O
+                         net (fo=5, routed)           0.514    15.741    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_9
+    SLICE_X6Y91          LUT5 (Prop_lut5_I4_O)        0.332    16.073 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[23]_i_3/O
+                         net (fo=2, routed)           0.552    16.625    CONVOLUTORE/SOMMA_FINALE/MSB_last[11]
+    SLICE_X8Y90          LUT5 (Prop_lut5_I3_O)        0.124    16.749 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[23]_i_1/O
+                         net (fo=1, routed)           0.000    16.749    CONVOLUTORE/SOMMA_FINALE/Z[23]
+    SLICE_X8Y90          FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       14.000    14.000 r  
+    N15                                               0.000    14.000 r  CLK (IN)
+                         net (fo=0)                   0.000    14.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.814    14.814 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.911    16.725    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    16.816 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.519    18.336    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X8Y90          FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[23]/C
+                         clock pessimism              0.323    18.659    
+                         clock uncertainty           -0.035    18.623    
+    SLICE_X8Y90          FDRE (Setup_fdre_C_D)        0.077    18.700    CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[23]
+  -------------------------------------------------------------------
+                         required time                         18.700    
+                         arrival time                         -16.749    
+  -------------------------------------------------------------------
+                         slack                                  1.951    
+
+Slack (MET) :             2.004ns  (required time - arrival time)
+  Source:                 CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            14.000ns  (clk rise@14.000ns - clk rise@0.000ns)
+  Data Path Delay:        11.997ns  (logic 3.979ns (33.167%)  route 8.018ns (66.833%))
+  Logic Levels:           13  (LUT3=1 LUT5=8 LUT6=4)
+  Clock Path Skew:        -0.043ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.337ns = ( 18.337 - 14.000 ) 
+    Source Clock Delay      (SCD):    4.703ns
+    Clock Pessimism Removal (CPR):    0.323ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.948     0.948 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.016     2.963    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.059 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.643     4.703    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X15Y92         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y92         FDRE (Prop_fdre_C_Q)         0.456     5.159 r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/Q
+                         net (fo=6, routed)           1.135     6.293    CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[0]
+    SLICE_X9Y92          LUT6 (Prop_lut6_I1_O)        0.124     6.417 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[19]_i_2/O
+                         net (fo=4, routed)           1.147     7.565    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_2
+    SLICE_X9Y88          LUT5 (Prop_lut5_I0_O)        0.152     7.717 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[21]_i_2/O
+                         net (fo=4, routed)           0.426     8.143    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_4
+    SLICE_X9Y89          LUT5 (Prop_lut5_I0_O)        0.328     8.471 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[23]_i_2/O
+                         net (fo=4, routed)           0.662     9.132    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_6
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.355     9.487 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[25]_i_2/O
+                         net (fo=4, routed)           0.297     9.785    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_8
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.328    10.113 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[27]_i_2/O
+                         net (fo=4, routed)           0.627    10.739    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_10
+    SLICE_X10Y90         LUT3 (Prop_lut3_I0_O)        0.353    11.092 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[29]_i_2/O
+                         net (fo=6, routed)           0.326    11.418    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_11
+    SLICE_X11Y90         LUT6 (Prop_lut6_I0_O)        0.348    11.766 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[14]_i_3/O
+                         net (fo=4, routed)           0.438    12.204    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_1
+    SLICE_X10Y90         LUT5 (Prop_lut5_I0_O)        0.116    12.320 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[16]_i_2/O
+                         net (fo=4, routed)           0.710    13.030    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_3
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.322    13.352 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[18]_i_3/O
+                         net (fo=4, routed)           0.572    13.924    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_5
+    SLICE_X9Y89          LUT5 (Prop_lut5_I0_O)        0.320    14.244 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[20]_i_3/O
+                         net (fo=4, routed)           0.662    14.906    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_7
+    SLICE_X7Y89          LUT5 (Prop_lut5_I0_O)        0.321    15.227 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[22]_i_3/O
+                         net (fo=5, routed)           0.458    15.685    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_9
+    SLICE_X7Y91          LUT6 (Prop_lut6_I0_O)        0.332    16.017 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[26]_i_3/O
+                         net (fo=3, routed)           0.558    16.575    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_12
+    SLICE_X8Y91          LUT6 (Prop_lut6_I4_O)        0.124    16.699 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[26]_i_1/O
+                         net (fo=1, routed)           0.000    16.699    CONVOLUTORE/SOMMA_FINALE/Z[26]
+    SLICE_X8Y91          FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       14.000    14.000 r  
+    N15                                               0.000    14.000 r  CLK (IN)
+                         net (fo=0)                   0.000    14.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.814    14.814 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.911    16.725    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    16.816 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.520    18.337    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X8Y91          FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[26]/C
+                         clock pessimism              0.323    18.660    
+                         clock uncertainty           -0.035    18.624    
+    SLICE_X8Y91          FDRE (Setup_fdre_C_D)        0.079    18.703    CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[26]
+  -------------------------------------------------------------------
+                         required time                         18.703    
+                         arrival time                         -16.699    
+  -------------------------------------------------------------------
+                         slack                                  2.004    
+
+Slack (MET) :             2.151ns  (required time - arrival time)
+  Source:                 CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            14.000ns  (clk rise@14.000ns - clk rise@0.000ns)
+  Data Path Delay:        11.852ns  (logic 3.979ns (33.573%)  route 7.873ns (66.427%))
+  Logic Levels:           13  (LUT3=1 LUT5=8 LUT6=4)
+  Clock Path Skew:        -0.043ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.337ns = ( 18.337 - 14.000 ) 
+    Source Clock Delay      (SCD):    4.703ns
+    Clock Pessimism Removal (CPR):    0.323ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.948     0.948 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.016     2.963    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.059 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.643     4.703    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X15Y92         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y92         FDRE (Prop_fdre_C_Q)         0.456     5.159 f  CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG_reg[0]/Q
+                         net (fo=6, routed)           1.135     6.293    CONVOLUTORE/SOMMA_FINALE/LSB_LVL3_REG[0]
+    SLICE_X9Y92          LUT6 (Prop_lut6_I1_O)        0.124     6.417 f  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[19]_i_2/O
+                         net (fo=4, routed)           1.147     7.565    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_2
+    SLICE_X9Y88          LUT5 (Prop_lut5_I0_O)        0.152     7.717 f  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[21]_i_2/O
+                         net (fo=4, routed)           0.426     8.143    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_4
+    SLICE_X9Y89          LUT5 (Prop_lut5_I0_O)        0.328     8.471 f  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[23]_i_2/O
+                         net (fo=4, routed)           0.662     9.132    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_6
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.355     9.487 f  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[25]_i_2/O
+                         net (fo=4, routed)           0.297     9.785    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_8
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.328    10.113 f  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[27]_i_2/O
+                         net (fo=4, routed)           0.627    10.739    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_10
+    SLICE_X10Y90         LUT3 (Prop_lut3_I0_O)        0.353    11.092 f  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[29]_i_2/O
+                         net (fo=6, routed)           0.326    11.418    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cint_11
+    SLICE_X11Y90         LUT6 (Prop_lut6_I0_O)        0.348    11.766 f  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[14]_i_3/O
+                         net (fo=4, routed)           0.438    12.204    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_1
+    SLICE_X10Y90         LUT5 (Prop_lut5_I0_O)        0.116    12.320 f  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[16]_i_2/O
+                         net (fo=4, routed)           0.710    13.030    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_3
+    SLICE_X9Y90          LUT5 (Prop_lut5_I0_O)        0.322    13.352 f  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[18]_i_3/O
+                         net (fo=4, routed)           0.572    13.924    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_5
+    SLICE_X9Y89          LUT5 (Prop_lut5_I0_O)        0.320    14.244 f  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[20]_i_3/O
+                         net (fo=4, routed)           0.662    14.906    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_7
+    SLICE_X7Y89          LUT5 (Prop_lut5_I0_O)        0.321    15.227 f  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[22]_i_3/O
+                         net (fo=5, routed)           0.458    15.685    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_9
+    SLICE_X7Y91          LUT6 (Prop_lut6_I0_O)        0.332    16.017 f  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[26]_i_3/O
+                         net (fo=3, routed)           0.413    16.430    CONVOLUTORE/SOMMA_FINALE/FINAL_SUM1_LVL4/cintM_12
+    SLICE_X8Y91          LUT6 (Prop_lut6_I3_O)        0.124    16.554 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT[15]_i_1/O
+                         net (fo=1, routed)           0.000    16.554    CONVOLUTORE/SOMMA_FINALE/Z[15]
+    SLICE_X8Y91          FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       14.000    14.000 r  
+    N15                                               0.000    14.000 r  CLK (IN)
+                         net (fo=0)                   0.000    14.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.814    14.814 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.911    16.725    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    16.816 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.520    18.337    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X8Y91          FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[15]/C
+                         clock pessimism              0.323    18.660    
+                         clock uncertainty           -0.035    18.624    
+    SLICE_X8Y91          FDRE (Setup_fdre_C_D)        0.081    18.705    CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[15]
+  -------------------------------------------------------------------
+                         required time                         18.705    
+                         arrival time                         -16.554    
+  -------------------------------------------------------------------
+                         slack                                  2.151    
+
+Slack (MET) :             2.188ns  (required time - arrival time)
+  Source:                 CONVOLUTORE/SOMMA_FINALE/PL_2_REG_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/SOMMA_FINALE/PMM_1_REG_reg[11]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            14.000ns  (clk rise@14.000ns - clk rise@0.000ns)
+  Data Path Delay:        11.737ns  (logic 3.936ns (33.534%)  route 7.801ns (66.466%))
+  Logic Levels:           12  (LUT3=1 LUT5=9 LUT6=2)
+  Clock Path Skew:        -0.023ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.335ns = ( 18.335 - 14.000 ) 
+    Source Clock Delay      (SCD):    4.699ns
+    Clock Pessimism Removal (CPR):    0.341ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.948     0.948 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.016     2.963    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.059 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.639     4.699    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X13Y86         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PL_2_REG_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y86         FDRE (Prop_fdre_C_Q)         0.419     5.118 r  CONVOLUTORE/SOMMA_FINALE/PL_2_REG_reg[0]/Q
+                         net (fo=4, routed)           1.194     6.311    CONVOLUTORE/SOMMA_FINALE/PL_2_REG[0]
+    SLICE_X15Y90         LUT6 (Prop_lut6_I1_O)        0.299     6.610 r  CONVOLUTORE/SOMMA_FINALE/PLL_1_REG[4]_i_2/O
+                         net (fo=3, routed)           0.409     7.020    CONVOLUTORE/SOMMA_FINALE/SUM2_LVL2/cint_2
+    SLICE_X13Y89         LUT5 (Prop_lut5_I0_O)        0.117     7.137 r  CONVOLUTORE/SOMMA_FINALE/PLL_1_REG[6]_i_2/O
+                         net (fo=3, routed)           0.444     7.580    CONVOLUTORE/SOMMA_FINALE/SUM2_LVL2/cint_4
+    SLICE_X12Y89         LUT5 (Prop_lut5_I0_O)        0.327     7.907 r  CONVOLUTORE/SOMMA_FINALE/PLL_1_REG[8]_i_2/O
+                         net (fo=3, routed)           0.623     8.530    CONVOLUTORE/SOMMA_FINALE/SUM2_LVL2/cint_6
+    SLICE_X12Y90         LUT5 (Prop_lut5_I0_O)        0.350     8.880 r  CONVOLUTORE/SOMMA_FINALE/PLL_1_REG[10]_i_2/O
+                         net (fo=3, routed)           0.583     9.463    CONVOLUTORE/SOMMA_FINALE/SUM2_LVL2/cint_8
+    SLICE_X11Y91         LUT5 (Prop_lut5_I0_O)        0.350     9.813 r  CONVOLUTORE/SOMMA_FINALE/PLL_1_REG[11]_i_2/O
+                         net (fo=2, routed)           0.267    10.080    CONVOLUTORE/SOMMA_FINALE/SUM2_LVL2/cint_10
+    SLICE_X11Y91         LUT3 (Prop_lut3_I0_O)        0.328    10.408 r  CONVOLUTORE/SOMMA_FINALE/PMM_1_REG[1]_i_2/O
+                         net (fo=5, routed)           0.639    11.047    CONVOLUTORE/SOMMA_FINALE/SUM2_LVL2/cint_11
+    SLICE_X14Y89         LUT6 (Prop_lut6_I0_O)        0.327    11.374 r  CONVOLUTORE/SOMMA_FINALE/PMM_1_REG[3]_i_2/O
+                         net (fo=3, routed)           0.697    12.072    CONVOLUTORE/SOMMA_FINALE/SUM2_LVL2/cintM_1
+    SLICE_X15Y86         LUT5 (Prop_lut5_I0_O)        0.118    12.190 r  CONVOLUTORE/SOMMA_FINALE/PMM_1_REG[5]_i_2/O
+                         net (fo=3, routed)           0.696    12.886    CONVOLUTORE/SOMMA_FINALE/SUM2_LVL2/cintM_3
+    SLICE_X15Y88         LUT5 (Prop_lut5_I0_O)        0.319    13.205 r  CONVOLUTORE/SOMMA_FINALE/PMM_1_REG[7]_i_2/O
+                         net (fo=3, routed)           0.431    13.636    CONVOLUTORE/SOMMA_FINALE/SUM2_LVL2/cintM_5
+    SLICE_X15Y87         LUT5 (Prop_lut5_I0_O)        0.325    13.961 r  CONVOLUTORE/SOMMA_FINALE/PMM_1_REG[9]_i_2/O
+                         net (fo=3, routed)           0.618    14.579    CONVOLUTORE/SOMMA_FINALE/SUM2_LVL2/cintM_7
+    SLICE_X13Y87         LUT5 (Prop_lut5_I0_O)        0.325    14.904 r  CONVOLUTORE/SOMMA_FINALE/PMM_1_REG[11]_i_2/O
+                         net (fo=3, routed)           0.592    15.496    CONVOLUTORE/SOMMA_FINALE/SUM2_LVL2/cintM_9
+    SLICE_X13Y88         LUT5 (Prop_lut5_I4_O)        0.332    15.828 r  CONVOLUTORE/SOMMA_FINALE/PMM_1_REG[11]_i_1/O
+                         net (fo=1, routed)           0.608    16.436    CONVOLUTORE/SOMMA_FINALE/PMM_1[11]
+    SLICE_X12Y88         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PMM_1_REG_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       14.000    14.000 r  
+    N15                                               0.000    14.000 r  CLK (IN)
+                         net (fo=0)                   0.000    14.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.814    14.814 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.911    16.725    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    16.816 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        1.518    18.335    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X12Y88         FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PMM_1_REG_reg[11]/C
+                         clock pessimism              0.341    18.676    
+                         clock uncertainty           -0.035    18.640    
+    SLICE_X12Y88         FDRE (Setup_fdre_C_D)       -0.016    18.624    CONVOLUTORE/SOMMA_FINALE/PMM_1_REG_reg[11]
+  -------------------------------------------------------------------
+                         required time                         18.624    
+                         arrival time                         -16.436    
+  -------------------------------------------------------------------
+                         slack                                  2.188    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.028ns  (arrival time - required time)
+  Source:                 CONVOLUTORE/PIXEL01/RegSum3_reg[17]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/PIXEL01/RegSum7_reg[17]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.390ns  (logic 0.227ns (58.226%)  route 0.163ns (41.774%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.271ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.963ns
+    Source Clock Delay      (SCD):    1.445ns
+    Clock Pessimism Removal (CPR):    0.246ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.177     0.177 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.640     0.817    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.843 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.603     1.445    CONVOLUTORE/PIXEL01/CLK_IBUF_BUFG
+    SLICE_X3Y99          FDRE                                         r  CONVOLUTORE/PIXEL01/RegSum3_reg[17]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y99          FDRE (Prop_fdre_C_Q)         0.128     1.573 r  CONVOLUTORE/PIXEL01/RegSum3_reg[17]/Q
+                         net (fo=3, routed)           0.163     1.736    CONVOLUTORE/PIXEL01/RegSum3[17]
+    SLICE_X3Y100         LUT3 (Prop_lut3_I1_O)        0.099     1.835 r  CONVOLUTORE/PIXEL01/RegSum7[17]_i_1__6/O
+                         net (fo=1, routed)           0.000     1.835    CONVOLUTORE/PIXEL01/outsum6[17]
+    SLICE_X3Y100         FDRE                                         r  CONVOLUTORE/PIXEL01/RegSum7_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.365     0.365 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.695     1.060    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.089 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.873     1.963    CONVOLUTORE/PIXEL01/CLK_IBUF_BUFG
+    SLICE_X3Y100         FDRE                                         r  CONVOLUTORE/PIXEL01/RegSum7_reg[17]/C
+                         clock pessimism             -0.246     1.716    
+    SLICE_X3Y100         FDRE (Hold_fdre_C_D)         0.091     1.807    CONVOLUTORE/PIXEL01/RegSum7_reg[17]
+  -------------------------------------------------------------------
+                         required time                         -1.807    
+                         arrival time                           1.835    
+  -------------------------------------------------------------------
+                         slack                                  0.028    
+
+Slack (MET) :             0.054ns  (arrival time - required time)
+  Source:                 CONVOLUTORE/PIXEL02/pix_in_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/PIXEL02/o5_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.430ns  (logic 0.190ns (44.201%)  route 0.240ns (55.799%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.269ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.960ns
+    Source Clock Delay      (SCD):    1.444ns
+    Clock Pessimism Removal (CPR):    0.246ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.177     0.177 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.640     0.817    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.843 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.602     1.444    CONVOLUTORE/PIXEL02/CLK_IBUF_BUFG
+    SLICE_X3Y96          FDRE                                         r  CONVOLUTORE/PIXEL02/pix_in_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y96          FDRE (Prop_fdre_C_Q)         0.141     1.585 r  CONVOLUTORE/PIXEL02/pix_in_reg[12]/Q
+                         net (fo=8, routed)           0.240     1.825    CONVOLUTORE/PIXEL02/mux20_bit_1/Q[4]
+    SLICE_X4Y101         LUT4 (Prop_lut4_I2_O)        0.049     1.874 r  CONVOLUTORE/PIXEL02/mux20_bit_1/o5[8]_i_1__5/O
+                         net (fo=1, routed)           0.000     1.874    CONVOLUTORE/PIXEL02/o1[8]
+    SLICE_X4Y101         FDRE                                         r  CONVOLUTORE/PIXEL02/o5_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.365     0.365 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.695     1.060    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.089 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.870     1.960    CONVOLUTORE/PIXEL02/CLK_IBUF_BUFG
+    SLICE_X4Y101         FDRE                                         r  CONVOLUTORE/PIXEL02/o5_reg[8]/C
+                         clock pessimism             -0.246     1.713    
+    SLICE_X4Y101         FDRE (Hold_fdre_C_D)         0.107     1.820    CONVOLUTORE/PIXEL02/o5_reg[8]
+  -------------------------------------------------------------------
+                         required time                         -1.820    
+                         arrival time                           1.874    
+  -------------------------------------------------------------------
+                         slack                                  0.054    
+
+Slack (MET) :             0.058ns  (arrival time - required time)
+  Source:                 CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[25]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/DIADI[7]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.415ns  (logic 0.164ns (39.551%)  route 0.251ns (60.449%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.060ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.976ns
+    Source Clock Delay      (SCD):    1.414ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.177     0.177 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.640     0.817    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.843 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.572     1.414    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X8Y90          FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[25]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y90          FDRE (Prop_fdre_C_Q)         0.164     1.578 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[25]/Q
+                         net (fo=1, routed)           0.251     1.829    CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/dina[7]
+    RAMB36_X0Y19         RAMB36E1                                     r  CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/DIADI[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.365     0.365 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.695     1.060    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.089 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.887     1.976    CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/clka
+    RAMB36_X0Y19         RAMB36E1                                     r  CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism             -0.501     1.475    
+    RAMB36_X0Y19         RAMB36E1 (Hold_ramb36e1_CLKARDCLK_DIADI[7])
+                                                      0.296     1.771    CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         -1.771    
+                         arrival time                           1.829    
+  -------------------------------------------------------------------
+                         slack                                  0.058    
+
+Slack (MET) :             0.060ns  (arrival time - required time)
+  Source:                 CONVOLUTORE/PIXEL02/RegSum2_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/PIXEL02/RegSum6_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.449ns  (logic 0.209ns (46.572%)  route 0.240ns (53.428%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.269ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.932ns
+    Source Clock Delay      (SCD):    1.416ns
+    Clock Pessimism Removal (CPR):    0.246ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.177     0.177 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.640     0.817    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.843 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.574     1.416    CONVOLUTORE/PIXEL02/CLK_IBUF_BUFG
+    SLICE_X10Y99         FDRE                                         r  CONVOLUTORE/PIXEL02/RegSum2_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y99         FDRE (Prop_fdre_C_Q)         0.164     1.580 r  CONVOLUTORE/PIXEL02/RegSum2_reg[5]/Q
+                         net (fo=3, routed)           0.240     1.820    CONVOLUTORE/PIXEL02/RegSum2[5]
+    SLICE_X10Y100        LUT3 (Prop_lut3_I0_O)        0.045     1.865 r  CONVOLUTORE/PIXEL02/RegSum6[5]_i_1__5/O
+                         net (fo=1, routed)           0.000     1.865    CONVOLUTORE/PIXEL02/outsum5[5]
+    SLICE_X10Y100        FDRE                                         r  CONVOLUTORE/PIXEL02/RegSum6_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.365     0.365 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.695     1.060    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.089 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.843     1.932    CONVOLUTORE/PIXEL02/CLK_IBUF_BUFG
+    SLICE_X10Y100        FDRE                                         r  CONVOLUTORE/PIXEL02/RegSum6_reg[5]/C
+                         clock pessimism             -0.246     1.685    
+    SLICE_X10Y100        FDRE (Hold_fdre_C_D)         0.120     1.805    CONVOLUTORE/PIXEL02/RegSum6_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -1.805    
+                         arrival time                           1.865    
+  -------------------------------------------------------------------
+                         slack                                  0.060    
+
+Slack (MET) :             0.063ns  (arrival time - required time)
+  Source:                 CONVOLUTORE/PIXEL01/RegSum4_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/PIXEL01/RegSum7_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.427ns  (logic 0.227ns (53.214%)  route 0.200ns (46.786%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.272ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.962ns
+    Source Clock Delay      (SCD):    1.443ns
+    Clock Pessimism Removal (CPR):    0.246ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.177     0.177 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.640     0.817    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.843 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.601     1.443    CONVOLUTORE/PIXEL01/CLK_IBUF_BUFG
+    SLICE_X3Y101         FDRE                                         r  CONVOLUTORE/PIXEL01/RegSum4_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y101         FDRE (Prop_fdre_C_Q)         0.128     1.571 r  CONVOLUTORE/PIXEL01/RegSum4_reg[10]/Q
+                         net (fo=4, routed)           0.200     1.771    CONVOLUTORE/PIXEL01/RegSum4[10]
+    SLICE_X4Y98          LUT6 (Prop_lut6_I5_O)        0.099     1.870 r  CONVOLUTORE/PIXEL01/RegSum7[12]_i_1__6/O
+                         net (fo=1, routed)           0.000     1.870    CONVOLUTORE/PIXEL01/outsum6[12]
+    SLICE_X4Y98          FDRE                                         r  CONVOLUTORE/PIXEL01/RegSum7_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.365     0.365 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.695     1.060    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.089 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.873     1.962    CONVOLUTORE/PIXEL01/CLK_IBUF_BUFG
+    SLICE_X4Y98          FDRE                                         r  CONVOLUTORE/PIXEL01/RegSum7_reg[12]/C
+                         clock pessimism             -0.246     1.715    
+    SLICE_X4Y98          FDRE (Hold_fdre_C_D)         0.092     1.807    CONVOLUTORE/PIXEL01/RegSum7_reg[12]
+  -------------------------------------------------------------------
+                         required time                         -1.807    
+                         arrival time                           1.870    
+  -------------------------------------------------------------------
+                         slack                                  0.063    
+
+Slack (MET) :             0.065ns  (arrival time - required time)
+  Source:                 CONVOLUTORE/PIXEL02/pix_in_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/PIXEL02/o5_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.426ns  (logic 0.186ns (43.677%)  route 0.240ns (56.323%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.269ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.960ns
+    Source Clock Delay      (SCD):    1.444ns
+    Clock Pessimism Removal (CPR):    0.246ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.177     0.177 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.640     0.817    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.843 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.602     1.444    CONVOLUTORE/PIXEL02/CLK_IBUF_BUFG
+    SLICE_X3Y96          FDRE                                         r  CONVOLUTORE/PIXEL02/pix_in_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y96          FDRE (Prop_fdre_C_Q)         0.141     1.585 r  CONVOLUTORE/PIXEL02/pix_in_reg[12]/Q
+                         net (fo=8, routed)           0.240     1.825    CONVOLUTORE/PIXEL02/mux20_bit_1/Q[4]
+    SLICE_X4Y101         LUT3 (Prop_lut3_I2_O)        0.045     1.870 r  CONVOLUTORE/PIXEL02/mux20_bit_1/o5[12]_i_1__5/O
+                         net (fo=1, routed)           0.000     1.870    CONVOLUTORE/PIXEL02/o1[12]
+    SLICE_X4Y101         FDRE                                         r  CONVOLUTORE/PIXEL02/o5_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.365     0.365 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.695     1.060    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.089 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.870     1.960    CONVOLUTORE/PIXEL02/CLK_IBUF_BUFG
+    SLICE_X4Y101         FDRE                                         r  CONVOLUTORE/PIXEL02/o5_reg[12]/C
+                         clock pessimism             -0.246     1.713    
+    SLICE_X4Y101         FDRE (Hold_fdre_C_D)         0.092     1.805    CONVOLUTORE/PIXEL02/o5_reg[12]
+  -------------------------------------------------------------------
+                         required time                         -1.805    
+                         arrival time                           1.870    
+  -------------------------------------------------------------------
+                         slack                                  0.065    
+
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 CONVOLUTORE/PIXEL02/nove_bit2_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/PIXEL02/RegSum2_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.435ns  (logic 0.226ns (51.919%)  route 0.209ns (48.081%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.269ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.932ns
+    Source Clock Delay      (SCD):    1.416ns
+    Clock Pessimism Removal (CPR):    0.246ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.177     0.177 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.640     0.817    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.843 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.574     1.416    CONVOLUTORE/PIXEL02/CLK_IBUF_BUFG
+    SLICE_X9Y98          FDRE                                         r  CONVOLUTORE/PIXEL02/nove_bit2_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y98          FDRE (Prop_fdre_C_Q)         0.128     1.544 r  CONVOLUTORE/PIXEL02/nove_bit2_reg[3]/Q
+                         net (fo=3, routed)           0.209     1.754    CONVOLUTORE/PIXEL02/nove_bit2[3]
+    SLICE_X9Y100         LUT3 (Prop_lut3_I0_O)        0.098     1.852 r  CONVOLUTORE/PIXEL02/RegSum2[6]_i_1__5/O
+                         net (fo=1, routed)           0.000     1.852    CONVOLUTORE/PIXEL02/outsum2[6]
+    SLICE_X9Y100         FDRE                                         r  CONVOLUTORE/PIXEL02/RegSum2_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.365     0.365 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.695     1.060    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.089 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.843     1.932    CONVOLUTORE/PIXEL02/CLK_IBUF_BUFG
+    SLICE_X9Y100         FDRE                                         r  CONVOLUTORE/PIXEL02/RegSum2_reg[6]/C
+                         clock pessimism             -0.246     1.685    
+    SLICE_X9Y100         FDRE (Hold_fdre_C_D)         0.091     1.776    CONVOLUTORE/PIXEL02/RegSum2_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -1.776    
+                         arrival time                           1.852    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+Slack (MET) :             0.077ns  (arrival time - required time)
+  Source:                 CONVOLUTORE/PIXEL02/RegSum9_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/PIXEL02/Pout_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.453ns  (logic 0.207ns (45.681%)  route 0.246ns (54.319%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.269ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.932ns
+    Source Clock Delay      (SCD):    1.416ns
+    Clock Pessimism Removal (CPR):    0.246ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.177     0.177 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.640     0.817    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.843 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.574     1.416    CONVOLUTORE/PIXEL02/CLK_IBUF_BUFG
+    SLICE_X12Y99         FDRE                                         r  CONVOLUTORE/PIXEL02/RegSum9_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X12Y99         FDRE (Prop_fdre_C_Q)         0.164     1.580 r  CONVOLUTORE/PIXEL02/RegSum9_reg[3]/Q
+                         net (fo=7, routed)           0.246     1.826    CONVOLUTORE/PIXEL02/RegSum9[3]
+    SLICE_X13Y101        LUT5 (Prop_lut5_I2_O)        0.043     1.869 r  CONVOLUTORE/PIXEL02/Pout[6]_i_1__5/O
+                         net (fo=1, routed)           0.000     1.869    CONVOLUTORE/PIXEL02/outsum8[6]
+    SLICE_X13Y101        FDRE                                         r  CONVOLUTORE/PIXEL02/Pout_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.365     0.365 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.695     1.060    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.089 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.843     1.932    CONVOLUTORE/PIXEL02/CLK_IBUF_BUFG
+    SLICE_X13Y101        FDRE                                         r  CONVOLUTORE/PIXEL02/Pout_reg[6]/C
+                         clock pessimism             -0.246     1.685    
+    SLICE_X13Y101        FDRE (Hold_fdre_C_D)         0.107     1.792    CONVOLUTORE/PIXEL02/Pout_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -1.792    
+                         arrival time                           1.869    
+  -------------------------------------------------------------------
+                         slack                                  0.077    
+
+Slack (MET) :             0.082ns  (arrival time - required time)
+  Source:                 CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[21]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/DIADI[3]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.439ns  (logic 0.141ns (32.108%)  route 0.298ns (67.892%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.061ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.976ns
+    Source Clock Delay      (SCD):    1.413ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.177     0.177 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.640     0.817    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.843 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.571     1.413    CONVOLUTORE/SOMMA_FINALE/CLK_IBUF_BUFG
+    SLICE_X9Y89          FDRE                                         r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[21]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y89          FDRE (Prop_fdre_C_Q)         0.141     1.554 r  CONVOLUTORE/SOMMA_FINALE/PIXEL_OUT_reg[21]/Q
+                         net (fo=1, routed)           0.298     1.852    CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/dina[3]
+    RAMB36_X0Y19         RAMB36E1                                     r  CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/DIADI[3]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.365     0.365 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.695     1.060    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.089 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.887     1.976    CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/clka
+    RAMB36_X0Y19         RAMB36E1                                     r  CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism             -0.501     1.475    
+    RAMB36_X0Y19         RAMB36E1 (Hold_ramb36e1_CLKARDCLK_DIADI[3])
+                                                      0.296     1.771    CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         -1.771    
+                         arrival time                           1.852    
+  -------------------------------------------------------------------
+                         slack                                  0.082    
+
+Slack (MET) :             0.090ns  (arrival time - required time)
+  Source:                 CONTROL_UNIT/address_mem_out_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Destination:            CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[11]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk  {rise@0.000ns fall@7.000ns period=14.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.333ns  (logic 0.164ns (49.272%)  route 0.169ns (50.728%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.059ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.976ns
+    Source Clock Delay      (SCD):    1.415ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.177     0.177 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.640     0.817    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.843 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.573     1.415    CONTROL_UNIT/CLK_IBUF_BUFG
+    SLICE_X8Y96          FDRE                                         r  CONTROL_UNIT/address_mem_out_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y96          FDRE (Prop_fdre_C_Q)         0.164     1.579 r  CONTROL_UNIT/address_mem_out_reg[8]/Q
+                         net (fo=6, routed)           0.169     1.748    CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/addra[8]
+    RAMB36_X0Y19         RAMB36E1                                     r  CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    N15                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    N15                  IBUF (Prop_ibuf_I_O)         0.365     0.365 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.695     1.060    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.089 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2667, routed)        0.887     1.976    CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/clka
+    RAMB36_X0Y19         RAMB36E1                                     r  CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                         clock pessimism             -0.501     1.475    
+    RAMB36_X0Y19         RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[11])
+                                                      0.183     1.658    CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+  -------------------------------------------------------------------
+                         required time                         -1.658    
+                         arrival time                           1.748    
+  -------------------------------------------------------------------
+                         slack                                  0.090    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform(ns):       { 0.000 7.000 }
+Period(ns):         14.000
+Sources:            { CLK }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y20  CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y20  CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y19  CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y19  CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y17  CONVOLUTORE/MEM_IN/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y17  CONVOLUTORE/MEM_IN/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y21  CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y21  CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y22  CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         14.000      11.424     RAMB36_X0Y22  CONVOLUTORE/MEMORY_OUT/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Low Pulse Width   Slow    SRLC32E/CLK         n/a            0.980         7.000       6.020      SLICE_X34Y91  CONVOLUTORE/FIFO1/my_fifo_reg[31][14]_srl32___CONVOLUTORE_FIFO1_my_fifo_reg_r_30/CLK
+Low Pulse Width   Slow    SRLC32E/CLK         n/a            0.980         7.000       6.020      SLICE_X34Y91  CONVOLUTORE/FIFO1/my_fifo_reg[59][14]_srl28___CONVOLUTORE_FIFO1_my_fifo_reg_r_58/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X6Y87   CONVOLUTORE/SOMMA_FINALE/r_pp7_reg[10]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X2Y88   CONVOLUTORE/SOMMA_FINALE/r_pp7_reg[11]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X6Y87   CONVOLUTORE/SOMMA_FINALE/r_pp7_reg[3]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X6Y87   CONVOLUTORE/SOMMA_FINALE/r_pp7_reg[6]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X2Y88   CONVOLUTORE/SOMMA_FINALE/r_pp7_reg[7]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X2Y88   CONVOLUTORE/SOMMA_FINALE/r_pp7_reg[9]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X6Y92   CONVOLUTORE/SOMMA_FINALE/r_pp8_reg[11]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X2Y88   CONVOLUTORE/SOMMA_FINALE/r_pp8_reg[1]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X6Y90   CONVOLUTORE/SOMMA_FINALE/r_pp7_reg[5]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X6Y90   CONVOLUTORE/SOMMA_FINALE/r_pp8_reg[10]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X6Y92   CONVOLUTORE/SOMMA_FINALE/r_pp8_reg[11]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X6Y90   CONVOLUTORE/SOMMA_FINALE/r_pp8_reg[5]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X6Y92   CONVOLUTORE/SOMMA_FINALE/r_pp8_reg[6]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X6Y90   CONVOLUTORE/SOMMA_FINALE/r_pp8_reg[8]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X6Y92   CONVOLUTORE/PIXEL02/RegSum6_reg[0]_srl3___CONVOLUTORE_FIFO1_my_fifo_reg_r_1/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         7.000       6.020      SLICE_X6Y92   CONVOLUTORE/PIXEL02/RegSum6_reg[1]_srl2___CONVOLUTORE_FIFO1_my_fifo_reg_r_0/CLK
+High Pulse Width  Fast    SRLC32E/CLK         n/a            0.980         7.000       6.020      SLICE_X42Y87  CONVOLUTORE/FIFO1/my_fifo_reg[31][3]_srl32___CONVOLUTORE_FIFO1_my_fifo_reg_r_30/CLK
+High Pulse Width  Fast    SRLC32E/CLK         n/a            0.980         7.000       6.020      SLICE_X42Y87  CONVOLUTORE/FIFO1/my_fifo_reg[31][6]_srl32___CONVOLUTORE_FIFO1_my_fifo_reg_r_30/CLK
+
+
+

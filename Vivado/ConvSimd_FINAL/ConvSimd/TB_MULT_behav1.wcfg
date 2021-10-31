@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_final_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_final" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1004666666fs"></ZoomStartTime>
+      <ZoomEndTime time="1029186667fs"></ZoomEndTime>
+      <Cursor1Time time="1025100000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="171"></NameColumnWidth>
+      <ValueColumnWidth column_width="95"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="37" />
+   <wvobject fp_name="/TB_final/START_TB" type="logic">
+      <obj_property name="ElementShortName">START_TB</obj_property>
+      <obj_property name="ObjectShortName">START_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/RST_TB" type="logic">
+      <obj_property name="ElementShortName">RST_TB</obj_property>
+      <obj_property name="ObjectShortName">RST_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/CLK_TB" type="logic">
+      <obj_property name="ElementShortName">CLK_TB</obj_property>
+      <obj_property name="ObjectShortName">CLK_TB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/pixel_in" type="array">
+      <obj_property name="ElementShortName">pixel_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_in[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONTROL_UNIT/riga" type="array">
+      <obj_property name="ElementShortName">riga[5:0]</obj_property>
+      <obj_property name="ObjectShortName">riga[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONTROL_UNIT/colonna" type="array">
+      <obj_property name="ElementShortName">colonna[5:0]</obj_property>
+      <obj_property name="ObjectShortName">colonna[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/ADDR_IN" type="array">
+      <obj_property name="ElementShortName">ADDR_IN[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_IN[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/EN_MEM_IN" type="logic">
+      <obj_property name="ElementShortName">EN_MEM_IN</obj_property>
+      <obj_property name="ObjectShortName">EN_MEM_IN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/P22" type="array">
+      <obj_property name="ElementShortName">P22[15:0]</obj_property>
+      <obj_property name="ObjectShortName">P22[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/P21" type="array">
+      <obj_property name="ElementShortName">P21[15:0]</obj_property>
+      <obj_property name="ObjectShortName">P21[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/P20" type="array">
+      <obj_property name="ElementShortName">P20[15:0]</obj_property>
+      <obj_property name="ObjectShortName">P20[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/P12" type="array">
+      <obj_property name="ElementShortName">P12[15:0]</obj_property>
+      <obj_property name="ObjectShortName">P12[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/P11" type="array">
+      <obj_property name="ElementShortName">P11[15:0]</obj_property>
+      <obj_property name="ObjectShortName">P11[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/P10" type="array">
+      <obj_property name="ElementShortName">P10[15:0]</obj_property>
+      <obj_property name="ObjectShortName">P10[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/P02" type="array">
+      <obj_property name="ElementShortName">P02[15:0]</obj_property>
+      <obj_property name="ObjectShortName">P02[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/P01" type="array">
+      <obj_property name="ElementShortName">P01[15:0]</obj_property>
+      <obj_property name="ObjectShortName">P01[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/P00" type="array">
+      <obj_property name="ElementShortName">P00[15:0]</obj_property>
+      <obj_property name="ObjectShortName">P00[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/pp0" type="array">
+      <obj_property name="ElementShortName">pp0[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pp0[23:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/pp1" type="array">
+      <obj_property name="ElementShortName">pp1[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pp1[23:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/pp2" type="array">
+      <obj_property name="ElementShortName">pp2[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pp2[23:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/pp3" type="array">
+      <obj_property name="ElementShortName">pp3[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pp3[23:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/pp4" type="array">
+      <obj_property name="ElementShortName">pp4[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pp4[23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/pp5" type="array">
+      <obj_property name="ElementShortName">pp5[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pp5[23:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/pp6" type="array">
+      <obj_property name="ElementShortName">pp6[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pp6[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/pp7" type="array">
+      <obj_property name="ElementShortName">pp7[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pp7[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/pp8" type="array">
+      <obj_property name="ElementShortName">pp8[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pp8[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/DATA_OUT" type="array">
+      <obj_property name="ElementShortName">DATA_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_OUT[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/ADDR_OUT" type="array">
+      <obj_property name="ElementShortName">ADDR_OUT[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_OUT[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/MEMORY_OUT/ena" type="logic">
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/EN_MEM_OUT" type="logic">
+      <obj_property name="ElementShortName">EN_MEM_OUT</obj_property>
+      <obj_property name="ObjectShortName">EN_MEM_OUT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/WEA_MEM_OUT" type="array">
+      <obj_property name="ElementShortName">WEA_MEM_OUT[0:0]</obj_property>
+      <obj_property name="ObjectShortName">WEA_MEM_OUT[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/MEMORY_OUT/wea" type="array">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/MEMORY_OUT/dina" type="array">
+      <obj_property name="ElementShortName">dina[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/MEMORY_OUT/douta" type="array">
+      <obj_property name="ElementShortName">douta[31:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONTROL_UNIT/current_state" type="other">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/PIX_OUT_TB" type="array">
+      <obj_property name="ElementShortName">PIX_OUT_TB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PIX_OUT_TB[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_final/UUT/CONVOLUTORE/PIXEL22/w0" type="array">
+      <obj_property name="ElementShortName">w0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w0[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

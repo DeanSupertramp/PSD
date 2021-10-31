@@ -1,0 +1,75 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f1ec9f782f4849069fd923ff5bdc1511 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot TB_final_behav xil_defaultlib.TB_final -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,in...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,initp_00="00...]
+Compiling architecture structure of entity xil_defaultlib.Memory_in_blk_mem_gen_prim_wrapper_init [memory_in_blk_mem_gen_prim_wrapp...]
+Compiling architecture structure of entity xil_defaultlib.Memory_in_blk_mem_gen_prim_width [memory_in_blk_mem_gen_prim_width...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,in...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,init_00="000...]
+Compiling architecture structure of entity xil_defaultlib.\Memory_in_blk_mem_gen_prim_wrapper_init__parameterized0\ [\Memory_in_blk_mem_gen_prim_wrap...]
+Compiling architecture structure of entity xil_defaultlib.\Memory_in_blk_mem_gen_prim_width__parameterized0\ [\Memory_in_blk_mem_gen_prim_widt...]
+Compiling architecture structure of entity xil_defaultlib.Memory_in_blk_mem_gen_generic_cstr [memory_in_blk_mem_gen_generic_cs...]
+Compiling architecture structure of entity xil_defaultlib.Memory_in_blk_mem_gen_top [memory_in_blk_mem_gen_top_defaul...]
+Compiling architecture structure of entity xil_defaultlib.Memory_in_blk_mem_gen_v8_4_1_synth [memory_in_blk_mem_gen_v8_4_1_syn...]
+Compiling architecture structure of entity xil_defaultlib.Memory_in_blk_mem_gen_v8_4_1 [memory_in_blk_mem_gen_v8_4_1_def...]
+Compiling architecture structure of entity xil_defaultlib.Memory_in [memory_in_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIFO [fifo_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_8 [mux_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.MuxExt [muxext_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux9 [mux9_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux20 [mux20_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux1 [mux1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_24 [rca_24_default]
+Compiling architecture behavioral of entity xil_defaultlib.MULT_SIMD3X3 [mult_simd3x3_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux11 [mux11_default]
+Compiling architecture behavioral of entity xil_defaultlib.adder_level_1 [adder_level_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux12 [mux12_default]
+Compiling architecture behavioral of entity xil_defaultlib.adder_level_2 [adder_level_2_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux13 [mux13_default]
+Compiling architecture behavioral of entity xil_defaultlib.adder_level_3 [adder_level_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux14 [mux14_default]
+Compiling architecture behavioral of entity xil_defaultlib.adder_level_4 [adder_level_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux32 [mux32_default]
+Compiling architecture behavioral of entity xil_defaultlib.pixel_final_sum [pixel_final_sum_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(doa_reg=1,in...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(doa_reg=1,rdaddr_colli...]
+Compiling architecture structure of entity xil_defaultlib.Mem_out_blk_mem_gen_prim_wrapper [mem_out_blk_mem_gen_prim_wrapper...]
+Compiling architecture structure of entity xil_defaultlib.Mem_out_blk_mem_gen_prim_width [mem_out_blk_mem_gen_prim_width_d...]
+Compiling architecture structure of entity xil_defaultlib.\Mem_out_blk_mem_gen_prim_wrapper__parameterized0\ [\Mem_out_blk_mem_gen_prim_wrappe...]
+Compiling architecture structure of entity xil_defaultlib.\Mem_out_blk_mem_gen_prim_width__parameterized0\ [\Mem_out_blk_mem_gen_prim_width_...]
+Compiling architecture structure of entity xil_defaultlib.\Mem_out_blk_mem_gen_prim_wrapper__parameterized1\ [\Mem_out_blk_mem_gen_prim_wrappe...]
+Compiling architecture structure of entity xil_defaultlib.\Mem_out_blk_mem_gen_prim_width__parameterized1\ [\Mem_out_blk_mem_gen_prim_width_...]
+Compiling architecture structure of entity xil_defaultlib.\Mem_out_blk_mem_gen_prim_wrapper__parameterized2\ [\Mem_out_blk_mem_gen_prim_wrappe...]
+Compiling architecture structure of entity xil_defaultlib.\Mem_out_blk_mem_gen_prim_width__parameterized2\ [\Mem_out_blk_mem_gen_prim_width_...]
+Compiling architecture structure of entity xil_defaultlib.Mem_out_blk_mem_gen_generic_cstr [mem_out_blk_mem_gen_generic_cstr...]
+Compiling architecture structure of entity xil_defaultlib.Mem_out_blk_mem_gen_top [mem_out_blk_mem_gen_top_default]
+Compiling architecture structure of entity xil_defaultlib.Mem_out_blk_mem_gen_v8_4_1_synth [mem_out_blk_mem_gen_v8_4_1_synth...]
+Compiling architecture structure of entity xil_defaultlib.Mem_out_blk_mem_gen_v8_4_1 [mem_out_blk_mem_gen_v8_4_1_defau...]
+Compiling architecture structure of entity xil_defaultlib.Mem_out [mem_out_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg_file [reg_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONV_SIMD_3X3 [conv_simd_3x3_default]
+Compiling architecture behavioral of entity xil_defaultlib.W2F [w2f_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_final
+Built simulation snapshot TB_final_behav

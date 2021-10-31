@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_MULT_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_MULT" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="166670000fs"></ZoomStartTime>
+      <ZoomEndTime time="1166670001fs"></ZoomEndTime>
+      <Cursor1Time time="838801000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="141"></NameColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/TB_MULT/a" type="array">
+      <obj_property name="ElementShortName">a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">a[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_MULT/uut/pix_1" type="array">
+      <obj_property name="ElementShortName">pix_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pix_1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_MULT/uut/pix_0" type="array">
+      <obj_property name="ElementShortName">pix_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pix_0[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_MULT/w" type="array">
+      <obj_property name="ElementShortName">w[3:0]</obj_property>
+      <obj_property name="ObjectShortName">w[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_MULT/simd" type="logic">
+      <obj_property name="ElementShortName">simd</obj_property>
+      <obj_property name="ObjectShortName">simd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_MULT/p" type="array">
+      <obj_property name="ElementShortName">p[23:0]</obj_property>
+      <obj_property name="ObjectShortName">p[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_MULT/uut/s1" type="array">
+      <obj_property name="ElementShortName">s1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">s1[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_MULT/uut/s2" type="array">
+      <obj_property name="ElementShortName">s2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">s2[11:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ConvSimd.srcs/sources_1/new/FA.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/MULT_SIMD3X3.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/MUX9.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/RCA_24.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/mux1.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/mux20.vhd" \
+"../../../../ConvSimd.srcs/sim_1/new/TB_MULT.vhd" \
+
+# Do not sort compile order
+nosort

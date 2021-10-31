@@ -1,0 +1,120 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f1ec9f782f4849069fd923ff5bdc1511 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot TB_final_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.TB_final xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "TB_final_time_impl.sdf", for root module "TB_final/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "TB_final_time_impl.sdf", for root module "TB_final/UUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.FSM
+Compiling module simprims_ver.SRLC32E_default
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.FIFO_0
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,RDA...
+Compiling module simprims_ver.RAMB36E1(DOA_REG=1,RDADDR_COLLIS...
+Compiling module xil_defaultlib.Mem_out_blk_mem_gen_prim_wrapper
+Compiling module xil_defaultlib.Mem_out_blk_mem_gen_prim_width
+Compiling module xil_defaultlib.Mem_out_blk_mem_gen_prim_wrapper...
+Compiling module xil_defaultlib.Mem_out_blk_mem_gen_prim_width__...
+Compiling module xil_defaultlib.Mem_out_blk_mem_gen_prim_wrapper...
+Compiling module xil_defaultlib.Mem_out_blk_mem_gen_prim_width__...
+Compiling module xil_defaultlib.Mem_out_blk_mem_gen_prim_wrapper...
+Compiling module xil_defaultlib.Mem_out_blk_mem_gen_prim_width__...
+Compiling module xil_defaultlib.Mem_out_blk_mem_gen_generic_cstr
+Compiling module xil_defaultlib.Mem_out_blk_mem_gen_top
+Compiling module xil_defaultlib.Mem_out_blk_mem_gen_v8_4_1_synth
+Compiling module xil_defaultlib.Mem_out_blk_mem_gen_v8_4_1
+Compiling module xil_defaultlib.Mem_out
+Compiling module simprims_ver.FDCE(INIT=1'b1)
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,RDA...
+Compiling module simprims_ver.RAMB36E1(DOA_REG=1,INITP_00=256'...
+Compiling module xil_defaultlib.Memory_in_blk_mem_gen_prim_wrapp...
+Compiling module xil_defaultlib.Memory_in_blk_mem_gen_prim_width
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,RDA...
+Compiling module simprims_ver.RAMB36E1(DOA_REG=1,INIT_00=256'b...
+Compiling module xil_defaultlib.Memory_in_blk_mem_gen_prim_wrapp...
+Compiling module xil_defaultlib.Memory_in_blk_mem_gen_prim_width...
+Compiling module xil_defaultlib.Memory_in_blk_mem_gen_generic_cs...
+Compiling module xil_defaultlib.Memory_in_blk_mem_gen_top
+Compiling module xil_defaultlib.Memory_in_blk_mem_gen_v8_4_1_syn...
+Compiling module xil_defaultlib.Memory_in_blk_mem_gen_v8_4_1
+Compiling module xil_defaultlib.Memory_in
+Compiling module xil_defaultlib.MuxExt
+Compiling module xil_defaultlib.MuxExt_1
+Compiling module xil_defaultlib.Mux20_41
+Compiling module xil_defaultlib.Mux20_42
+Compiling module xil_defaultlib.Mux20_43
+Compiling module xil_defaultlib.Mux20_44
+Compiling module xil_defaultlib.MULT_SIMD3X3
+Compiling module simprims_ver.SRL16E_default
+Compiling module xil_defaultlib.Mux20_37
+Compiling module xil_defaultlib.Mux20_38
+Compiling module xil_defaultlib.Mux20_39
+Compiling module xil_defaultlib.Mux20_40
+Compiling module xil_defaultlib.MULT_SIMD3X3_2
+Compiling module xil_defaultlib.Mux20_33
+Compiling module xil_defaultlib.Mux20_34
+Compiling module xil_defaultlib.Mux20_35
+Compiling module xil_defaultlib.Mux20_36
+Compiling module xil_defaultlib.MULT_SIMD3X3_3
+Compiling module xil_defaultlib.Mux20_29
+Compiling module xil_defaultlib.Mux20_30
+Compiling module xil_defaultlib.Mux20_31
+Compiling module xil_defaultlib.Mux20_32
+Compiling module xil_defaultlib.MULT_SIMD3X3_4
+Compiling module xil_defaultlib.Mux20_25
+Compiling module xil_defaultlib.Mux20_26
+Compiling module xil_defaultlib.Mux20_27
+Compiling module xil_defaultlib.Mux20_28
+Compiling module xil_defaultlib.MULT_SIMD3X3_5
+Compiling module xil_defaultlib.Mux20_21
+Compiling module xil_defaultlib.Mux20_22
+Compiling module xil_defaultlib.Mux20_23
+Compiling module xil_defaultlib.Mux20_24
+Compiling module xil_defaultlib.MULT_SIMD3X3_6
+Compiling module xil_defaultlib.Mux20_17
+Compiling module xil_defaultlib.Mux20_18
+Compiling module xil_defaultlib.Mux20_19
+Compiling module xil_defaultlib.Mux20_20
+Compiling module xil_defaultlib.MULT_SIMD3X3_7
+Compiling module xil_defaultlib.Mux20_13
+Compiling module xil_defaultlib.Mux20_14
+Compiling module xil_defaultlib.Mux20_15
+Compiling module xil_defaultlib.Mux20_16
+Compiling module xil_defaultlib.MULT_SIMD3X3_8
+Compiling module xil_defaultlib.Mux20
+Compiling module xil_defaultlib.Mux20_10
+Compiling module xil_defaultlib.Mux20_11
+Compiling module xil_defaultlib.Mux20_12
+Compiling module xil_defaultlib.MULT_SIMD3X3_9
+Compiling module xil_defaultlib.pixel_final_sum
+Compiling module xil_defaultlib.reg_file
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.CONV_SIMD_3X3
+Compiling architecture behavioral of entity xil_defaultlib.W2F [w2f_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_final
+Built simulation snapshot TB_final_time_impl

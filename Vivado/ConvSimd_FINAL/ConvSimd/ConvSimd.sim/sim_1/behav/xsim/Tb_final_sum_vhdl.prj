@@ -1,0 +1,17 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ConvSimd.srcs/sources_1/new/FA.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/MUX13.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/Mux12.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/adder_level_1.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/adder_level_2.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/adder_level_4.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/adder_lever_3.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/mux11.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/mux14.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/mux32.vhd" \
+"../../../../ConvSimd.srcs/sources_1/new/pixel_final_sum.vhd" \
+"../../../../ConvSimd.srcs/sim_1/new/Tb_final_sum.vhd" \
+
+# Do not sort compile order
+nosort
