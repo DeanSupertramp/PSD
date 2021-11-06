@@ -1,5 +1,5 @@
 # PSD
-Repository per il progetto di Progettazione dei Sistemi Digitali 2019/2020
+Progettazione, implementazione e simulazione su Vivado di un Convolutore SIMD 3x3 per il corso di Progettazione dei Sistemi Digitali 2019/2020
 
 Sviluppato da **_Andrea Alecce_** e **_Matteo Cannistrà_**
 
