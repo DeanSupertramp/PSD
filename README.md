@@ -1,5 +1,7 @@
 # PSD
-Progettazione, implementazione e simulazione su Vivado di un Convolutore SIMD 3x3 per il corso di Progettazione dei Sistemi Digitali 2019/2020
+Progettazione, implementazione e simulazione su Vivado di un Convolutore SIMD 3x3 per il corso di Progettazione dei Sistemi Digitali 2019/2020.
+
+Il progetto è stato realizzato selezionando la scheda **Nexys4 DDR** (xc7a100tcsg324-1) della famiglia **Artix-7** e simulato su **Vivado** nella versione **2017.4**.
 
 Sviluppato da **_Andrea Alecce_** e **_Matteo Cannistrà_**
 
